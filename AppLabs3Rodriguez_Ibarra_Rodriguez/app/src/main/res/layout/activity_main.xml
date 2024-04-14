@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/mainlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="600dp"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Mi primera calculadora"
+            android:textAlignment="center"
+            android:textSize="50dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Seleccione la operación que desea realizar"
+            android:textSize="20dp" />
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton android:id="@+id/radioSuma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sumar"
+                />
+            <RadioButton android:id="@+id/radioResta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Restar"
+                />
+            <RadioButton android:id="@+id/radioMult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Multiplicar"
+                />
+            <RadioButton android:id="@+id/radioDivision"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dividir"
+                />
+            <RadioButton android:id="@+id/radioModulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Modulo"
+                />
+        </RadioGroup>
+        <EditText
+            android:id="@+id/txtNum1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Dato 1" />
+
+        <EditText
+            android:id="@+id/txtNum2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Dato 2" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="seleccionar"
+            android:text="Calular"
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            />
+
+
+        <TextView
+            android:id="@+id/lblres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="50dp"/>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/chayanne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainlayout"
+        android:visibility="gone"
+        android:src="@drawable/chayanne"/>
+
+</RelativeLayout>
+
