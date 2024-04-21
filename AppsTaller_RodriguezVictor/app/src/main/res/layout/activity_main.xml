@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/mainActivity"
+        android:orientation="vertical"
+        android:layout_margin="25dp">
+        <TextView
+            android:id="@+id/lblTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mi Super App"
+            android:textSize="50dp"
+            android:textAlignment="center"/>
+
+
+        <EditText
+            android:id="@+id/txtNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Introduzca su nombre"
+            android:layout_marginTop="50dp"
+            android:padding="20dp"
+            />
+        <EditText
+            android:id="@+id/txtEdad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Introduzca su edad"
+            android:inputType="number"
+            android:layout_marginTop="25dp"
+            android:padding="20dp"
+            />
+        <Spinner
+            android:id="@+id/spnCurso"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:padding="20dp"
+            />
+        <RadioGroup
+            android:id="@+id/rgrOpciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbtDiurnoAM"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Diurno A.M."/>
+            <RadioButton
+                android:id="@+id/rbtDiurnoPM"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Diurno P.M."/>
+            <RadioButton
+                android:id="@+id/rbtNocturno"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Nocturno"/>
+        </RadioGroup>
+        <CheckBox
+            android:id="@+id/ckMostrarProfe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Mostrar profe"/>
+        <Button
+            android:id="@+id/btnMatricular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:padding="20dp"
+            android:text="Matricular"
+            android:onClick="imprimirSalida"
+            android:textAlignment="center"/>
+        <TextView
+            android:id="@+id/lblSalida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+
+
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
